@@ -1,0 +1,59 @@
+
+{% extends "layout.twig" %}
+
+{% block content %}
+
+  <div class="widgetheader clearfix">
+      <div class="headerwrapper">
+          <div class="left">
+              {{widget('profile', 'headercolumn1socialicons', { 'profileType' : 'socialicons' })|raw}}
+          </div>
+          <div class="right">
+              {{widget('profile', 'headercolumn1profilePhone', { 'profileType':'phone', 'phone':'profile'})|raw}} 
+          </div>
+      </div>
+  </div>
+
+<header class="bk-header clearfix">
+      <div class="headerwrapper">
+        <div class="logo-container">
+            {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
+            {{widget('companyname', 'companyname', {"business": "AK STUDIO"})|raw}}
+        </div>
+        <div class="textwidget">
+            {{widget('content', 'textwidgetbox1', {content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.', lines: 'all'})|raw}}
+        </div>    
+       </div>
+  </header> 
+
+<div class="navbar">
+    <div class="headerwrapper">
+        {{widget('extendednavigation', 'navigationheader', {"align":"left"})|raw}}
+    </div>
+</div>
+
+<div class="page-wrap">
+    <div class="mainzone headerwrapper">
+        {{zone('main')|raw}}
+    </div>
+</div>
+
+<footer class="bk-footer">
+     <div class="footer-border headerwrapper">
+        {{widget('contactform', 'thisunqiuewidgetname1', {'text': 'Submit','formTitle': 'Contact Form', 'email': 'profile'})|raw}}
+     </div>
+</footer>
+
+  <div class="widgetfooter clearfix">
+      <div class="headerwrapper">
+          <div class="left">
+          {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
+              {{widget('companyname', 'thisunqiuewidgetname', {"business": "AK STUDIO"})|raw}}
+          </div>
+          <div class="right">
+              {{widget('profile', 'headercolumn1profileCopyright', { 'profileType':'copyright', 'copyright':'profile'})|raw}} 
+          </div>
+      </div>
+  </div>
+
+{% endblock %}

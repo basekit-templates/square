@@ -1,4 +1,4 @@
-square
-======
+Square
+=======
 
-Standard Basekit Template
+BaseKit Standard Template
