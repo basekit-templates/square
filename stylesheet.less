@@ -42,10 +42,6 @@ header.bk-header {
 	padding:100px 0px;
 }
 
-.bk-pt-default header.bk-header {
-    padding:15px 0px 0px 0px;
-}
-
 .widget {
 	&.logo, &.companyname {
 		display: inline-block;
@@ -210,22 +206,15 @@ header.bk-header {
 }
 
 .widget.extendednavigation {
-	display: inline-block;
 	position: relative;
 	width: 100%;
-	vertical-align: bottom;
-	@media only screen and (max-width: 900px) {
-		display: block;
-		margin-top: 15px;
-		width: 100%;
-	}
-	@media @tablet {
-		margin-top: 0;
-	}
 	ul {
-		@media only screen and (max-width: 900px) {
-			float: none;
-		}
+		display:none;
+        width:100%;
+        padding-top:150px;
+        li {
+            width: 100%;
+        }
 	}
 }
 
@@ -238,31 +227,52 @@ header.bk-header {
 }
 
 .widget .extendednavigation ul li a {
-	padding: 5px 20px;
+	padding: 20px 20px;
 }
 
 .widget .extendednavigation > ul > li > a, .widget .extendednavigation ul li.folder > .text {
-	padding:5px 20px;
+	padding:20px 20px;
 }
 
 .widget .extendednavigation ul li.folder:after {
 	top:48%;
 }
 
-.widget .extendednavigation > ul > li > a:hover {
-	color:@font-swatch6-color;
-}
-
-.widget .extendednavigation ul li.folder .text {
-	color:@font-swatch10-color;
-}
-
-.widget .extendednavigation ul > li.folder > .text {
-	color:@font-swatch6-color;
-}
-
 .widget .extendednavigation ul li.folder:after {
     border-top-color: @color-swatch1;
+}
+
+.widget .extendednavigation ul li a:hover, .widget .extendednavigation ul li.folder .text:hover {
+    color:darken(@font-swatch6-color,10%);
+}
+
+.widget .extendednavigation a.pull {
+    display:inline-block;
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    text-indent: -900em;
+    overflow: hidden;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+}
+
+.widget .extendednavigation a.pull:after {
+    background-image: image('/images/nav-icon.png');
+    background-repeat:no-repeat;
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 35px;
+    top: 0;
+    right: 0;
+    margin: 0px auto;
+    display: table;
+    left: 0;
 }
 
 /* ===============================
@@ -551,12 +561,12 @@ input,
 }
 
 .widget.profile span, .widget.profile a, .widget.profile p {
-	font-family:@font-swatch6-font-family; 
-	font-weight: @font-swatch6-font-weight; 
-	color:@font-swatch10-color; 
-	line-height:@font-swatch6-line-height; 
-	letter-spacing: @font-swatch6-letter-spacing; 
-	font-size: @font-swatch6-font-size;
+	font-family:@font-swatch4-font-family; 
+	font-weight: @font-swatch4-font-weight; 
+	color:@font-swatch4-color; 
+	line-height:@font-swatch4-line-height; 
+	letter-spacing: @font-swatch4-letter-spacing; 
+	font-size: @font-swatch4-font-size;
 }
 
 .widget.responsiveslideshow .slideshow-widget .btn-play {
@@ -912,38 +922,6 @@ footer .widget.profile .bk-profile-socialicons span a {
 	}
 }
 
-@media only screen and (max-width: 1400px) {
-
-.widget .extendednavigation a.pull {
-position: absolute;
-right: 0;
-top: -43px;
-display: inline-block;
-width: 40px;
-height: 40px;
-border: none;
-text-indent: -900em;
-overflow: hidden;
-cursor: pointer;
-outline: none;
-padding: 0;
-}
-
-
-    .widget .extendednavigation a.pull:after {
-        content: '';
-        position: absolute;
-        width: 26px;
-        height: 3px;
-        top: 0;
-        right: 0;
-        background-color:@color-swatch1;
-        box-shadow: 0 6px 0 @color-swatch1, 0 12px 0 @color-swatch1;
-        margin: 0px auto;
-        display: table;
-        left: 0;
-    }
-}
 @media only screen and (max-width: 768px) {
 	.widget .extendednavigation ul li {
 		border:0;

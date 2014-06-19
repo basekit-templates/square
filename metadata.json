@@ -88,7 +88,7 @@
         "font4": {
             "font-family": "\"Ubuntu\", Candara, Futura, sans-serif",
             "font-size": "18px",
-            "font-weight": "300",
+            "font-weight": "700",
             "line-height": "30px",
             "color": "@color-swatch4",
             "letter-spacing": "inherit"
@@ -103,9 +103,9 @@
         },
         "font6": {
             "font-family": "\"Ubuntu\", Candara, Futura, sans-serif",
-            "font-size": "16px",
+            "font-size": "24px",
             "font-weight": "700",
-            "line-height": "30px",
+            "line-height": "34px",
             "color": "@color-swatch1",
             "letter-spacing": "inherit",
             "color-hover": "@color-swatch1",
