@@ -26,7 +26,7 @@
             "color1":"#ffffff",
             "color2":"#dadada",
             "color3":"#841c2f",
-            "color4":"#000000",
+            "color4":"#841c2f",
             "color5":"#3c4a55",
             "color6":"#841c2f",
             "color7":"#000000"
@@ -35,7 +35,7 @@
             "color1":"#ffffff",
             "color2":"#dadada",
             "color3":"#4F7391",
-            "color4":"#000000",
+            "color4":"#4F7391",
             "color5":"#3c4a55",
             "color6":"#4F7391",
             "color7":"#000000"
@@ -44,7 +44,7 @@
             "color1":"#ffffff",
             "color2":"#dadada",
             "color3":"#73AD5C",
-            "color4":"#000000",
+            "color4":"#73AD5C",
             "color5":"#757575",
             "color6":"#73AD5C",
             "color7":"#000000"
@@ -53,14 +53,14 @@
             "color1":"#ffffff",
             "color2":"#dadada",
             "color3":"#4BA5A1",
-            "color4":"#000000",
+            "color4":"#4BA5A1",
             "color5":"#3c4a55",
             "color6":"#4BA5A1",
             "color7":"#000000"
         }
     },
     "fontSwatch": {
-       "title": "Oxygen",
+       "title": "Ubuntu",
         "font1": {
             "font-family": "\"Ubuntu\", Candara, Futura, sans-serif",
             "font-size": "30px",
