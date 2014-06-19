@@ -275,11 +275,6 @@ header.bk-header {
     left: 0;
 }
 
-#page-zones__template-widgets__extendednavigation-navigationheader-bk-overlay {
-    left: auto!important;
-    width: 4%;
-    height: 53px!important;
-}
 
 /* ===============================
    FEATURE = gallery widget
@@ -934,7 +929,6 @@ footer .widget.profile .bk-profile-socialicons span a {
 	}
 	.widget.extendednavigation {
 		width:100%;
-        top:170px;
 	}
 	.widget.extendednavigation .bk-overlay {
 		width: 100%;
@@ -967,7 +961,7 @@ footer .widget.profile .bk-profile-socialicons span a {
         width: 100%;
         margin: 0px auto;
         display: table;
-        top: 0;
+        top: 170px;
         z-index: 9999;
 	}
 	.bk-footer .contactform input, .bk-footer .contactform textarea {
@@ -1059,15 +1053,6 @@ footer .widget.profile .bk-profile-socialicons span a {
     header.bk-header {
         padding: 40px 0px 100px 0px;
     }
-    .widget.extendednavigation .bk-overlay {
-        position: absolute!important;
-        right: 0px!important;
-        left: 0px!important;
-        top: 0px!important;
-        bottom: 0px!important;
-        z-index: 8000!important;
-        cursor: pointer!important;
-    }
 
 }	
 
@@ -1084,7 +1069,7 @@ footer .widget.profile .bk-profile-socialicons span a {
 	}
 	.widget.companyname a {
 		font-size: bkscale(@font-swatch2-font-size, 1.2);
-        line-height: bkscale(@font-swatch2-line-height, 1.2);
+        line-height: bkscale(@font-swatch2-line-height, 0.8);
 	}
 	.widget.ecomcheckout table tr td .checkout-quantitybtn span {
 		width: 30px;
