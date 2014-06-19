@@ -275,6 +275,13 @@ header.bk-header {
     left: 0;
 }
 
+.page-zones__template-widgets__extendednavigation-navigationheader-bk-overlay {
+    position: absolute;
+    left: auto;
+    width: 4%;
+    height: 53px;
+}
+
 /* ===============================
    FEATURE = gallery widget
    =============================== */
@@ -934,7 +941,7 @@ footer .widget.profile .bk-profile-socialicons span a {
 		left: inherit !important;
 	}
 	.widget .extendednavigation ul {
-		padding-top:0;
+		padding-top: 190px;
 	}
 	.widget .extendednavigation > ul > li > a, .widget .extendednavigation ul li.folder > .text {
 		padding:0 20px;
@@ -954,9 +961,14 @@ footer .widget.profile .bk-profile-socialicons span a {
 		width: 100%;
 	}
 	.widget .extendednavigation a.pull {
-		width: 26px;
-		height: 20px;
+		width: 35px;
+		height: 31px;
 		top: 0px;
+        width: 100%;
+        margin: 0px auto;
+        display: table;
+        top: 170px;
+        z-index: 9999;
 	}
 	.bk-footer .contactform input, .bk-footer .contactform textarea {
 		width:70%;
@@ -975,28 +987,9 @@ footer .widget.profile .bk-profile-socialicons span a {
 		margin: 0px auto;
 		display: table;
 	}
-	.widget .extendednavigation a.pull {
-		width: 100%;
-		margin: 0px auto;
-		display: table;
-		top: 0px;
-	}
 	.widget .extendednavigation ul {
 		position:relative;
 		z-index:9999;
-	}
-	.widget .extendednavigation a.pull:after {
-		content: '';
-		position: absolute;
-		width: 26px;
-		height: 3px;
-		top: 0;
-		right: 0;
-		background-color:@color-swatch1;
-        box-shadow: 0 6px 0 @color-swatch1, 0 12px 0 @color-swatch1;
-		margin: 0px auto;
-		display: table;
-		left: 0;
 	}
 	.navbar {
 		background-color:transparent;
@@ -1004,9 +997,6 @@ footer .widget.profile .bk-profile-socialicons span a {
 	}
 	.widget .extendednavigation ul li a {
 		padding:0 20px;
-	}
-	header.bk-header, footer.bk-footer {
-		padding: 20px 0px;
 	}
 	.widgetheader .right {
 		margin: 0px auto;
@@ -1062,6 +1052,12 @@ footer .widget.profile .bk-profile-socialicons span a {
     }
     .widget.ecomproductslist .productlist-filter {
         width:100%;
+    }
+    .widget .extendednavigation a.pull:after {
+        background-color:transparent;
+    }
+    header.bk-header {
+        padding: 40px 0px 100px 0px;
     }
 
 }	
