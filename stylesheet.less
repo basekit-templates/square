@@ -113,7 +113,6 @@ header.bk-header {
         float:left;
         width:33%;
         .widget.profile span {
-            float:left;
             background-color:@color-swatch1;
             padding:10px;
             color:@font-swatch4-color;
@@ -565,7 +564,7 @@ input,
 .widget.profile span, .widget.profile a, .widget.profile p {
 	font-family:@font-swatch4-font-family; 
 	font-weight: @font-swatch4-font-weight; 
-	color:@font-swatch4-color; 
+	color:@font-swatch10-color; 
 	line-height:@font-swatch4-line-height; 
 	letter-spacing: @font-swatch4-letter-spacing; 
 	font-size: @font-swatch4-font-size;
@@ -597,8 +596,12 @@ textarea.message {
 	height:200px;
 }
 
+.widget.profile .bk-profile-socialicons span a {
+    background-color:@color-swatch4;
+}
+
 .widget.profile .bk-profile-socialicons span a:hover {
-	background-color:@color-swatch4;
+	background-color:darken(@color-swatch4,5%);
 }
 
 .twitter ul li a {

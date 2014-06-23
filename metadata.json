@@ -6,6 +6,11 @@
         "pageTypes": [
         "home"
     ],
+        "images":[
+        "images/gallery/1.jpg",
+        "images/gallery/2.jpg",
+        "images/gallery/3.jpg"
+    ],
     "tags": {
     "en": ["clean", "technology", "white", "modern", "professional", "simple", "photography", "sans serif"],
     "es": ["minimalista", "limpio", "fotografico", "vintage", "moderno", "oscuro", "estudio", "website", "creativo", "elegante", "profesional", "unico", "comunicacion", "sans-serif"],
