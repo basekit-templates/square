@@ -116,6 +116,7 @@ header.bk-header {
             background-color:@color-swatch1;
             padding:10px;
             color:@font-swatch4-color;
+            display:block;
         }
             .widget.content { 
             @media @tablet {
@@ -175,6 +176,17 @@ header.bk-header {
             float:none;
         }
     }
+}
+
+.widget.profile .bk-profile-socialicons span {
+    background-color:@color-swatch3!important;
+    padding:0!important;
+}
+
+#page-zones__template-widgets__extendednavigation-navigationheader-bk-overlay {
+    left:auto!important;
+    width: 42px!important;;
+    height: 42px!important;;
 }
 
 /*	===============================
@@ -444,6 +456,10 @@ header.bk-header {
     &:hover {
         background-color:darken(@color-swatch4,5%);
     }
+}
+
+.widget.ecomcheckout .checkout-order-button {
+    margin:20px 0px;
 }
 
 .widget.paypalbuynow .widget.button.paypal, 
@@ -1085,6 +1101,20 @@ footer .widget.profile .bk-profile-socialicons span a {
         width: 100%;
         padding-bottom: 100%;
     }
+    #page-zones__template-widgets__extendednavigation-navigationheader-bk-overlay {
+        position: absolute;
+        right: 0px;
+        left:0px;
+        top: 0px;
+        bottom: 0px;
+        z-index: 8000;
+        cursor: pointer;
+        width: 42px;
+        height: 42px;
+    }
+    .widget.profile .bk-profile-socialicons {
+        text-align:center;
+    }
 
 }	
 
@@ -1156,5 +1186,12 @@ footer .widget.profile .bk-profile-socialicons span a {
     .widget.ecomcheckout table {
         padding:0;
         background-color:transparent;
+    }
+    .blog-post-summary, .blog-post-more-link, .blog-post-published-date, .blog-post-content, .blog-post-category, .blog-post-tags {
+        padding:0px 20px;
+    }
+    .headerwrapper {
+        width: 100%;
+        margin: 0 0%;
     }
 }
