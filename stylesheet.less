@@ -348,12 +348,20 @@ header.bk-header {
     padding:0px 0px 0px 40px;
 }
 
+.blog-post-category {
+    padding:0;
+}
+
+.blog-post-body {
+    padding: 0px 40px 0px;
+}
+
 /*	===============================
 	Menu
 	=============================== */
 
 .dietary-icon {
-	padding:5px;
+	padding:5px 5px 8px 5px;
 	background-color:@color-swatch3;
 	color:@font-swatch10-color;
 }
@@ -463,7 +471,11 @@ header.bk-header {
 }
 
 .btn {
-	padding: 5px 14px 10px;
+	padding: 10px 14px 12px;
+}
+
+.widget.button button {
+    margin:5px 0px;
 }
 
 .widget.button button {
@@ -527,6 +539,7 @@ button.btn {
     padding: 20px;
     background-color:darken(@color-swatch1,5%);
     width: 270px;
+    margin:0px auto;
 }
 
 .widget.signupform {
@@ -593,7 +606,7 @@ time {
 }
 
 .widget.responsiveslideshow .title, .widget.responsiveslideshow .description {
-	color:@font-swatch5-color;
+	color:@font-swatch6-color;
 }
 
 textarea.message {
@@ -766,7 +779,9 @@ select::-ms-expand {
 }
 
 .form-group.productlist-search input {
-    height:39px;
+    height: 39px;
+    -webkit-appearance: none;
+    border-radius: 0;
 }
 
 /* ===============================
@@ -818,7 +833,7 @@ select::-ms-expand {
             &:after {
                 content: "\2190";
                 color: #fff;
-                top: 10px;
+                top: 8px;
                 @media @mobile {
                     top: 4px;
                 }
@@ -828,7 +843,7 @@ select::-ms-expand {
             &:after {
                 content: "\2192";
                 color: #fff;
-                top: 10px;
+                top: 8px;
                 @media @mobile {
                     top: 4px;
                 }
