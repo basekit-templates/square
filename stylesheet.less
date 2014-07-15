@@ -804,6 +804,26 @@ select::-ms-expand {
     border-radius: 0;
 }
 
+select::-ms-expand {
+    display: none;
+}
+
+.widget.ecomproduct .ecom-product .ecom-product-info .ecom-product-variation select,
+select {
+    -moz-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: '';
+}
+
+@supports (-moz-appearance:meterbar) and (background-blend-mode:difference,normal) {
+  .widget.ecomproduct .ecom-product .ecom-product-info .ecom-product-variation select, 
+  select,
+  .svg .widget.ecomproduct .ecom-product .ecom-product-info .ecom-product-variation select, 
+  .svg select {
+    background-image: none;
+  }
+}
+
 /* ===============================
    SLIDESHOW WIDGET
    =============================== */
