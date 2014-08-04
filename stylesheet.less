@@ -195,17 +195,20 @@ header.bk-header {
 
 .widget.feature .feature-bgimg .content button {
 	box-shadow: none;
-	padding:4px 14px;
+	padding:10px 14px;
 }
 
 .widget.feature button {
-	border:2px solid @color-swatch1!important;
-	background-color:transparent;
+	background-color:@color-swatch4;
 	color:@font-swatch7-color;
 }
 
 .widget.feature .feature-bgimg .content .spare {
 	text-align:center;
+}
+
+.widget.feature h3, .widget.feature h2 {
+    color:@font-swatch4-color;
 }
 
 /*	===============================
@@ -223,7 +226,7 @@ header.bk-header {
 	ul {
 		display:none;
         width:100%;
-        padding-top:150px;
+        padding-top:130px;
         li {
             width: 100%;
             padding:0;
@@ -430,7 +433,7 @@ header.bk-header {
 }
 
 .blog-post-body {
-    padding: 0px 20px 0px;
+    padding: 0px 20px 0px 40px;
 }
 
 .blog-post-sharing {
@@ -705,12 +708,12 @@ textarea.message {
 .widget.profile .bk-profile-socialicons span a {
     background-color:@color-swatch4;
     margin:0;
-    width: 42px;
+    width: 32px;
     height: 32px;
 }
 
 .widget.socialicons span a {
-    width: 42px;
+    width: 32px;
     height: 32px;
 }
 
@@ -1192,7 +1195,7 @@ footer.bk-footer .widget.profile .bk-profile-socialicons span {
     .headerwrapper .header-left .widget.profile span {
         float:none;
         margin:0px auto;
-        display:table;
+        display:inline-block;
         margin-bottom:20px;
     }
     .headerwrapper .header-left {
