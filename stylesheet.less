@@ -915,6 +915,113 @@ select {
     border-bottom:1px solid darken(@color-swatch1,10%);
 }
 
+// Ecom Basket Summary
+
+.ecombasketsummary a, .ecombasket .ecombasket-pull p {
+  font-family: @font-swatch7-font-family;
+  font-size: @font-swatch7-font-size;
+  font-weight: @font-swatch7-font-weight;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.widget.ecombasketsummary {
+  table {
+    border-spacing: 0;
+    width: 100%;
+    border-bottom: none;
+    list-style: none;
+    font-size: 18px;
+    color: @color-swatch4;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    padding:30px;
+    background-color:darken(@color-swatch1,5%);
+    @media @mobile {
+      padding: 10px;
+    }
+    tr:first-child { 
+      @media @mobile {
+          display: table-header-group;
+          th:nth-child(2) {
+            display: none;
+          }
+          th:nth-child(3) {
+            padding-left: 12px;
+          }
+      }
+    }
+    th {
+      text-align: left;
+    }
+    .basket-summary-items {
+      background: transparent;
+      @media @mobile {
+        display: table-row-group;
+        + tr {
+          display: block;
+        }
+      }
+      &:last-child {
+        td {
+          padding-bottom: 25px;
+        }
+      }
+      .image-wrap {
+        background-image: none!important;
+      }
+      td:nth-child(2) {
+        padding-left: 15px;
+      }
+      .basket-summary-pricepu, .basket-summary-quantity, .basket-summary-amount {
+        font-size: @font-swatch5-font-size;
+        line-height: @font-swatch5-line-height;
+      }
+      .basket-summary-pricepu {
+        display: block;
+      }
+      .basket-summary-quantity, .basket-summary-quantitybtn {
+        display: inline-block;
+        span {
+          background-color: darken(@color-swatch1,3%);
+      padding: 1px 25px 6px;
+      margin: -6px;
+        }
+        button {
+            padding:8px 10px;
+      border:0;
+      color:@color-swatch1;
+      background-color:@color-swatch3;
+      &:hover {
+        background-color:lighten(@color-swatch3,10%);
+      }
+        }
+      }
+      .basket-summary-amount {
+        color: darken(@color-swatch4, 10%);
+      }
+    }
+    .basket-summary-subtotal {
+      color: darken(@color-swatch4, 10%);
+      display: block;
+      font-size: bkscale(@font-swatch5-font-size, 1.05);
+      line-height: bkscale(@font-swatch5-font-size, 1.1);
+      margin-top: 25px;
+      border:2px solid @color-swatch7;
+      padding:20px;
+    }
+  }
+}
+
+.basket-summary-submit, .basket-summary-empty-cta {
+  display: inline-block;
+  padding: 0 12px;
+  line-height: 45px;
+  height: 45px;
+  font-weight: @font-swatch7-font-weight;
+}
+
 /* ===============================
    SLIDESHOW WIDGET
    =============================== */
