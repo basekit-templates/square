@@ -915,6 +915,16 @@ select {
     border-bottom:1px solid darken(@color-swatch1,10%);
 }
 
+    .widget.ecomcheckout {
+        width: 80%;
+        margin:0 10%;
+    }
+
+    .widget.ecombasketsummary {
+        width: 90%;
+        margin:0 5%;
+    }
+
 // Ecom Basket Summary
 
 .ecombasketsummary a, .ecombasket .ecombasket-pull p {
@@ -987,6 +997,9 @@ select {
           background-color: darken(@color-swatch1,3%);
       padding: 1px 25px 6px;
       margin: -6px;
+            @media @mobile {
+        padding: 2px 10px 6px;
+      }
         }
         button {
             padding:8px 10px;
@@ -1339,6 +1352,10 @@ footer.bk-footer .widget.profile .bk-profile-socialicons span {
         text-align:center;
     }
     .widget .extendednavigation ul li:hover ul {
+        margin:0;
+    }
+    .widget.ecomcheckout, .widget.ecombasketsummary {
+        width: 100%;
         margin:0;
     }
 
