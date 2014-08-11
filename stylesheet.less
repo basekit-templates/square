@@ -947,6 +947,7 @@ select {
     background-color:darken(@color-swatch1,5%);
     margin: 20px 0 30px;
     border: 1px solid darken(@color-swatch1,10%);
+    padding-top:20px;
     @media @mobile {
       padding: 0px;
     }
@@ -967,6 +968,7 @@ select {
             text-transform: uppercase;
             @media @mobile {
                 font-size: 12px;
+                display: none!important;
             }
       @media @mobile {
         font-size: 12px;
@@ -1070,7 +1072,7 @@ select {
       padding: 1px 25px 6px;
       margin: -6px;
             @media @mobile {
-        padding: 2px 10px 6px;
+        padding: 1px 10px 6px;
       }
         }
         button {
@@ -1079,7 +1081,7 @@ select {
       color:@color-swatch1;
       background-color:@color-swatch3;
             @media @mobile {
-        padding:6px 6px;
+        padding:7px 8px;
       }
       &:hover {
         background-color:lighten(@color-swatch3,10%);
@@ -1102,12 +1104,29 @@ select {
   }
 }
 
-.basket-summary-submit, .basket-summary-empty-cta {
+.basket-summary-submit {
   display: inline-block;
   padding: 0 12px;
   line-height: 45px;
   height: 45px;
   font-weight: @font-swatch7-font-weight;
+}
+
+.basket-summary-empty-cta.btn {
+    background-color:@color-swatch4;
+    text-decoration: none;
+    &:hover {
+        background-color:darken(@color-swatch4,5%);
+    }
+}
+
+.basket-summary-legal-links {
+    padding-top:10px;
+    list-style: none;
+    padding-left:0;
+    &:hover {
+        text-decoration:underline!important;
+    }
 }
 
 /* ===============================
@@ -1436,6 +1455,10 @@ footer.bk-footer .widget.profile .bk-profile-socialicons span {
     .widget.profile {
         margin:0px auto;
         display:table;
+    }
+    .widget.ecomcheckout table tr td .checkout-quantitybtn button {
+        width: 35px;
+        height: 35px;
     }
 
 }	
