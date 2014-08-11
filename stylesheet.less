@@ -915,16 +915,6 @@ select {
     border-bottom:1px solid darken(@color-swatch1,10%);
 }
 
-    .widget.ecomcheckout {
-        width: 80%;
-        margin:0 10%;
-    }
-
-    .widget.ecombasketsummary {
-        width: 90%;
-        margin:0 5%;
-    }
-
 // Ecom Basket Summary
 
 .ecombasketsummary a, .ecombasket .ecombasket-pull p {
@@ -937,6 +927,7 @@ select {
 }
 
 .widget.ecombasketsummary {
+    margin-top:20px;
   table {
     border-spacing: 0;
     width: 100%;
@@ -944,10 +935,9 @@ select {
     font-size: 18px;
     color: @color-swatch4;
     padding:30px;
-    background-color:darken(@color-swatch1,5%);
+    background-color:@color-swatch1;
     margin: 20px 0 30px;
     border: 1px solid darken(@color-swatch1,10%);
-    padding-top:20px;
     @media @mobile {
       padding: 0px;
     }
@@ -1098,7 +1088,6 @@ select {
       font-size: bkscale(@font-swatch5-font-size, 1.05);
       line-height: bkscale(@font-swatch5-font-size, 1.1);
       margin-top: 25px;
-      border:2px solid @color-swatch7;
       padding:20px;
     }
   }
