@@ -39,16 +39,15 @@ a {
 
 header.bk-header {
 	background-color:@color-swatch4;
-	padding:100px 0px;
-}
-
-.widget {
-	&.logo, &.companyname {
-		display: inline-block;
-	}
-	&.logo img {
-		vertical-align: bottom;
-	}
+	padding: 5em 0;
+    display: -webkit-flexbox;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
 }
 
 .widget.companyname {
@@ -105,26 +104,29 @@ header.bk-header {
 
 .headerwrapper {
     padding:0;
-    background-repeat: no-repeat;
-    background-position:bottom;
-    background-size:contain;
-    padding: 20px 0px 10px 0px;
+    .twitter-content {
+        time {
+            display: none;
+        }
+    }
     .header-left {
         float:left;
         width:33%;
-        .widget.profile span {
+        .widget.profile span.bk-full-name {
             background-color:@color-swatch1;
             padding:10px;
             color:@font-swatch4-color;
             display:inline-block;
+            margin-bottom: 10px;
+
         }
-            .widget.content { 
+        .widget.content { 
             @media @tablet {
-            margin:0px auto;
-            display:table;
-            text-align:center;
-                }
+                margin:0px auto;
+                display:table;
+                text-align:center;
             }
+        }
         @media @tablet {
             width:100%;
             margin-top:20px;
@@ -1417,7 +1419,7 @@ footer.bk-footer .widget.profile .bk-profile-socialicons span {
         background-color:transparent;
     }
     header.bk-header {
-        padding: 40px 0px;
+        padding: 1em 0;
     }
     .widget.gallery ul li {
         width: 100%;
