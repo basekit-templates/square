@@ -923,32 +923,44 @@ select {
 
 // Ecom Basket Summary
 
-.ecombasketsummary a, .ecombasket .ecombasket-pull p {
+.ecombasketsummary a {
   font-family: @font-swatch7-font-family;
   font-size: @font-swatch7-font-size;
   font-weight: @font-swatch7-font-weight;
+}
+
+.basket-summary-product-info a {
+  font-family: @font-swatch6-font-family;
+  font-size: @font-swatch6-font-size;
+  font-weight: @font-swatch6-font-weight;
+}
+
+.ecombasket .ecombasket-pull p {
+  font-family: @font-swatch7-font-family;
+  font-size: @font-swatch7-font-size;
   &:hover {
-    text-decoration: none;
+    background-color:@color-swatch3;
   }
 }
 
 .widget.ecombasketsummary {
-    margin-top:20px;
+  padding-top:20px;
   table {
     border-spacing: 0;
     width: 100%;
     list-style: none;
     font-size: 18px;
     color: @color-swatch4;
-    padding:30px;
-    background-color:@color-swatch1;
     margin: 20px 0 30px;
-    border: 1px solid darken(@color-swatch1,10%);
-    @media @mobile {
+    @media @tablet {
       padding: 0px;
     }
+    @media @mobile {
+      padding: 0px;
+      margin:0px 0px 30px 0px;
+    }
     tr:first-child { 
-            outline: 1px solid darken(@color-swatch1,10%);
+          outline: 1px solid darken(@color-swatch1,10%);
             background-color: darken(@color-swatch1,4%);
             -webkit-border-top-left-radius: 4px;
             -webkit-border-top-right-radius: 4px;
@@ -993,6 +1005,9 @@ select {
             &:nth-child(2) {
                 padding: 20px;
                 vertical-align: top;
+                @media @mobile {
+                  padding:20px 0px;
+                }
             }
             &:nth-child(2) {
                 @media (max-width: 530px) {
@@ -1034,7 +1049,11 @@ select {
 }
     .basket-summary-items {
       background: transparent;
-      @media @mobile {
+      @media @tablet {
+                img {
+            max-width:100px!important;
+        }
+              @media @mobile {
                 img {
             max-width:80px!important;
         }
@@ -1043,6 +1062,7 @@ select {
           display: block;
         }
       }
+  }
       &:last-child {
         td {
           padding-bottom: 25px;
@@ -1057,29 +1077,38 @@ select {
       .basket-summary-pricepu, .basket-summary-quantity, .basket-summary-amount {
         font-size: @font-swatch5-font-size;
         line-height: @font-swatch5-line-height;
+        label {
+          display:block;
+        }
       }
       .basket-summary-pricepu {
         display: block;
       }
+      .basket-summary-quantity {
+        margin-top: 4px;
+      }
       .basket-summary-quantity, .basket-summary-quantitybtn {
         display: inline-block;
+        label {
+          display:block;
+        }
         span {
-      padding: 1px 25px 6px;
-      margin: -6px;
-            @media @mobile {
-        padding: 1px 10px 6px;
-      }
+          padding: 5px 25px 6px;
+          margin: 0;
+          position: relative;
+          top: -2px;
         }
         button {
-            padding:8px 10px;
-      border:0;
-      color:@color-swatch1;
-      background-color:@color-swatch3;
-            @media @mobile {
-        padding:7px 8px;
-      }
+          width: 30px;
+          height: 30px;
+          padding: 0;
+          box-shadow: none;
+          border:0;
+          color:@color-swatch1;
+          background-color:@color-swatch3;
+          margin: 0;
       &:hover {
-        background-color:lighten(@color-swatch3,10%);
+        background-color:darken(@color-swatch3,5%);
       }
         }
       }
@@ -1093,12 +1122,14 @@ select {
       font-size: bkscale(@font-swatch5-font-size, 1.05);
       line-height: bkscale(@font-swatch5-font-size, 1.1);
       margin-top: 25px;
+      border:2px solid @color-swatch7;
       padding:20px;
+      font-weight:700;
     }
   }
 }
 
-.basket-summary-submit {
+.basket-summary-submit, .basket-summary-empty-cta {
   display: inline-block;
   padding: 0 12px;
   line-height: 45px;
@@ -1107,11 +1138,11 @@ select {
 }
 
 .basket-summary-empty-cta.btn {
-    background-color:@color-swatch4;
-    text-decoration: none;
-    &:hover {
-        background-color:darken(@color-swatch4,5%);
-    }
+  background-color:@color-swatch3;
+  text-decoration: none;
+  &:hover {
+    background-color:@color-swatch7;
+  }
 }
 
 .basket-summary-legal-links {
