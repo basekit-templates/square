@@ -248,6 +248,7 @@ header.bk-header {
 
 .widget .extendednavigation ul li:hover ul {
 	background-color:darken(@color-swatch4,5%);
+    padding:0px 20px;
 }
 
 .widget .extendednavigation ul li.folder:after {
@@ -435,7 +436,7 @@ header.bk-header {
 }
 
 .blog-post-body {
-    padding: 0px 20px 0px 40px;
+    padding: 0px 20px;
 }
 
 .blog-post-sharing {
@@ -850,8 +851,9 @@ select::-ms-expand {
 .ecom-product-go-to-checkout-btn {
 	margin-top:20px;
 	padding-top:13px;
+    background-color:@color-swatch4;
 	&:hover{
-		background-color:@color-swatch7;
+		background-color:darken(@color-swatch4,5%);
 		text-decoration: none;
 	}
 }
@@ -885,6 +887,10 @@ select::-ms-expand {
 .widget.ecomproduct {
     background-color: darken(@color-swatch1,5%);
     padding: 20px;
+}
+
+.widget.ecomproduct .ecom-product .btn {
+    margin: 20px 0 0;
 }
 
 .form-group.productlist-search input {
