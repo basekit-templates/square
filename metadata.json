@@ -2,7 +2,7 @@
 	"name":"square",
 	"thumbnail":"square.png",
 	"screenshot":"square.png",
-	"templateType":"Standard Template",
+    "templateType":"standard",
         "pageTypes": [
         "home"
     ],
