@@ -279,7 +279,6 @@ header.bk-header {
     width: 40px;
     height: 40px;
     border: none;
-    text-indent: -900em;
     overflow: hidden;
     cursor: pointer;
     outline: none;
@@ -287,8 +286,8 @@ header.bk-header {
 }
 
 .widget .extendednavigation a.pull:after {
-    background-image: image('/images/nav-icon.png');
-    background-repeat:no-repeat;
+    background: image('/images/nav-icon.png');
+    background-repeat :no-repeat;
     content: '';
     position: absolute;
     width: 40px;
@@ -1364,14 +1363,9 @@ footer.bk-footer .widget.profile .bk-profile-socialicons span {
 		width: 100%;
 	}
 	.widget .extendednavigation a.pull {
-		width: 35px;
-		height: 31px;
-		top: 0px;
+		top: -4px;
         width: 100%;
         margin: 0px auto;
-        display: table;
-        top: 0;
-        z-index: 9999;
 	}
 	.bk-footer .contactform input, .bk-footer .contactform textarea {
 		width:70%;
@@ -1457,7 +1451,8 @@ footer.bk-footer .widget.profile .bk-profile-socialicons span {
         width:100%;
     }
     .widget .extendednavigation a.pull:after {
-        background-color:transparent;
+        background-color: transparent;
+        box-shadow: none;
     }
     header.bk-header {
         padding: 1em 0;
