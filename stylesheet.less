@@ -65,6 +65,13 @@ header.bk-header {
 
 .textbox {
     padding:40px 0px 20px 0px;
+    max-width: 60%;
+    @media @tablet {
+        max-width: 80%;
+    }
+    @media @mobile {
+        max-width: 100%;
+    }
 }
 
 .textwidget {
@@ -574,38 +581,38 @@ header.bk-header {
 
 .widget.button button {
 	&:hover{
-		background-color:darken(@color-swatch4,5%);
-		color:@font-swatch6-color;
+		background-color: darken(@color-swatch4,5%);
+		color: @font-swatch6-color;
 	}
 }
 
 .contactform button.btn {
-	background-color:darken(@color-swatch4,5%);
-	color:@font-swatch7-color;
+	background-color: darken(@color-swatch4,5%);
+	color: @font-swatch7-color;
 	margin: 0px auto;
 	display: table;
-    padding:8px 25px;
+    padding: 8px 25px;
     &:hover {
-        background-color:@color-swatch1;
-        color:@font-swatch4-color;
+        background-color: @color-swatch1;
+        color: @font-swatch4-color;
     }
 }
 
 .widget.contactform form fieldset textarea {
-	margin-bottom:10px;
+	margin-bottom: 10px;
 }
 
 button.btn {
-    padding:10px 15px;
+    padding: 10px 15px;
     &:hover {
-        background-color:darken(@color-swatch4,5%);
+        background-color: darken(@color-swatch4,5%);
     }
 }
 
 .form-group.productlist-search button.btn {
-     padding:7px 15px;
+     padding: 7px 15px;
         &:hover {
-             background-color:darken(@color-swatch4,5%);
+             background-color: darken(@color-swatch4,5%);
         }
 }
 
@@ -614,16 +621,16 @@ button.btn {
 	=============================== */
 
 .contactform fieldset {
-	padding:20px 20px;
-	background-color:darken(@color-swatch1,5%);
+	padding: 20px 20px;
+	background-color: darken(@color-swatch1,5%);
 }
 
 .widget.contactform fieldset {
     border: none;
-    margin-bottom:20px;
+    margin-bottom: 20px;
     list-style: none;
     background-image: image('/images/send.png');
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     background-position: top 25px center;
 	margin-top: 20px;
 	padding-top: 55px;
@@ -633,7 +640,6 @@ button.btn {
     padding: 20px;
     background-color:darken(@color-swatch1,5%);
     width: 270px;
-    margin:0px auto;
 }
 
 .widget.signupform {
@@ -654,6 +660,15 @@ button.btn {
 label {
     color:@font-swatch4-color;
     display:block;
+}
+
+/*  ===============================
+    Image Widget
+    =============================== */
+
+.widget.image span.image-title,
+.widget.image span.image-description {
+    text-align: initial;
 }
 
 
