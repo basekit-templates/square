@@ -254,8 +254,9 @@ header.bk-header {
 
 
 .widget .extendednavigation ul li:hover ul {
-	background-color:darken(@color-swatch4,5%);
-    padding:0px 20px;
+	background-color: darken(@color-swatch4,5%);
+    padding: 0px 20px;
+    max-width: 100%;
 }
 
 .widget .extendednavigation ul li.folder:after {
@@ -407,7 +408,7 @@ header.bk-header {
 }
 
 .blog-post-title {
-	padding:40px 40px 0px;
+	padding:40px 40px 10px;
 }
 
 .blog-post-summary, .blog-post-more-link, .blog-post-published-date, .blog-post-content, .blog-post-category, .blog-post-tags {
@@ -434,7 +435,10 @@ header.bk-header {
 }
 
 .blog-post-publish-date {
-    padding:0px 0px 0px 40px;
+    padding: 0px 0px 0px 40px;
+    @media @mobile {
+        padding: 0px 0px 0px 20px;
+    }
 }
 
 .blog-post-category p {
@@ -447,6 +451,9 @@ header.bk-header {
 
 .blog-post-sharing {
     padding: 10px 40px;
+    @media @mobile {
+        padding: 10px 20px;
+    }
 }
 
 /*	===============================
@@ -697,17 +704,20 @@ input,
 }
 
 .widget.responsiveslideshow .slideshow-widget .btn-play {
-	height:50px;
+	height: 50px;
 }
 
 .widget.responsiveslideshow .slideshow-widget .btn-prev, 
 .widget.responsiveslideshow .slideshow-widget .btn-next {
-	padding:5px;
-	background-color:#ddd;
+	padding: 5px;
+	background-color: #ddd;
+    &:after {
+        top: 7px;
+    }
 }
 
 .widget.tweet {
-	margin:17px 0px;
+	margin: 17px 0px;
 }
 
 time {
@@ -1537,9 +1547,6 @@ footer.bk-footer .widget.profile .bk-profile-socialicons span {
 	.blog-post-item.has-image {
 		padding-bottom: 20px;
 	}
-	.blog-post-title {
-		padding-top: 20px;
-	}
 	.widget.responsiveslideshow .slideshow-widget .btn-play {
 		width: 20%;
 		left: 42%;
@@ -1563,10 +1570,11 @@ footer.bk-footer .widget.profile .bk-profile-socialicons span {
         color:@font-swatch10-color;
 	}
 	.bk-footer .contactform input, .bk-footer .contactform textarea {
-		width:100%;
+		width: 100%;
 	}
 	.blog-post-title {
-		padding:0px 20px;
+		padding: 10px 20px;
+        margin-top: 20px;
 	}
 	.blog-post-summary, .blog-post-more-link, time, .blog-post-content, .blog-post-category, .blog-post-tags {
 		padding:0px 20px;
@@ -1588,11 +1596,8 @@ footer.bk-footer .widget.profile .bk-profile-socialicons span {
         width: 90%;
         margin: 0 5%;
     }
-    .blog-post-title {
-        margin-top:20px;
-    }
     .widget .extendednavigation > ul > li > a, .widget .extendednavigation ul li.folder > .text {
-        padding:5px 0px;
+        padding:5px 20px;
     }
     .widget .extendednavigation ul {
         padding:30px 0px;
