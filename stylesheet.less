@@ -392,7 +392,7 @@ header.bk-header {
 .blogpost, .blog-post-list {
    .blog-post-feature-image-wrap {
        line-height: 0;
-       background-size: cover;
+       background-size: contain;
        background-position: center;
        width: auto;
        img {
@@ -428,7 +428,7 @@ header.bk-header {
 
 .blog-post-item {
     padding: 40px 0px;
-    background-color: grey;
+    background-color: darken(@color-swatch1,10%);
     margin-bottom: 40px;
 }
 
@@ -442,7 +442,8 @@ header.bk-header {
 .blog-search-form {
     padding: 20px;
     background-color: darken(@color-swatch1,10%);
-    width:100%;
+    width: 100%;
+    margin-bottom: 30px;
 }
 
 .blog-post-publish-date {
