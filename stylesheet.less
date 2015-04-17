@@ -263,7 +263,8 @@ header.bk-header {
   border-top-color:@font-swatch6-color;
 }
 
-.widget .extendednavigation > ul > li > a, .widget .extendednavigation ul li.folder > .text {
+.widget .extendednavigation > ul > li > a, 
+.widget .extendednavigation ul li.folder > .text {
 	padding:10px 20px;
 }
 
@@ -275,7 +276,8 @@ header.bk-header {
     border-top-color: @color-swatch1;
 }
 
-.widget .extendednavigation ul li a:hover, .widget .extendednavigation ul li.folder .text:hover {
+.widget .extendednavigation ul li a:hover, 
+.widget .extendednavigation ul li.folder .text:hover {
     color:darken(@font-swatch6-color,10%);
 }
 
@@ -411,14 +413,23 @@ header.bk-header {
 	padding:40px 40px 10px;
 }
 
-.blog-post-summary, .blog-post-more-link, .blog-post-published-date, .blog-post-content, .blog-post-category, .blog-post-tags {
+.blog-post-summary, .blog-post-more-link, 
+.blog-post-published-date, 
+.blog-post-content, 
+.blog-post-category, .blog-post-tags {
 	padding:0px 40px;
 }
 
 .blog-post-item.has-image {
 	padding-bottom: 45px;
-	background-color:darken(@color-swatch1,5%);
-	margin-bottom:30px;
+    background-color: darken(@color-swatch1,10%);
+	margin-bottom: 30px;
+}
+
+.blog-post-item {
+    padding: 40px 0px;
+    background-color: grey;
+    margin-bottom: 40px;
 }
 
 .blog-search-input {
@@ -446,7 +457,7 @@ header.bk-header {
 }
 
 .blog-post-body {
-    padding: 0px 20px;
+    padding: 0px 40px;
 }
 
 .blog-post-sharing {
@@ -724,7 +735,8 @@ time {
 	font-size:1em;
 }
 
-.widget.responsiveslideshow .title, .widget.responsiveslideshow .description {
+.widget.responsiveslideshow .title, 
+.widget.responsiveslideshow .description {
 	color:@font-swatch6-color;
 }
 
@@ -748,11 +760,13 @@ textarea.message {
 	background-color:darken(@color-swatch4,5%);
 }
 
-.widget.socialicons, .widget.profile .bk-profile-socialicons {
+.widget.socialicons, 
+.widget.profile .bk-profile-socialicons {
   min-height:32px;
 }
 
-.widget.socialicons span a, .widget.profile .bk-profile-socialicons span a {
+.widget.socialicons span a, 
+.widget.profile .bk-profile-socialicons span a {
   text-align:center;
 }
 
@@ -860,7 +874,9 @@ select::-ms-expand {
    text-overflow: '';
 }
 
-.ecom-featuredproducts-wrap h2, .ecom-productslist-product h2, .ecom-product h2 {
+.ecom-featuredproducts-wrap h2, 
+.ecom-productslist-product h2, 
+.ecom-product h2 {
 	font-size:@font-swatch3-font-size;
 }
 
@@ -1160,7 +1176,8 @@ select {
   }
 }
 
-.basket-summary-submit, .basket-summary-empty-cta {
+.basket-summary-submit, 
+.basket-summary-empty-cta {
   display: inline-block;
   padding: 0 12px;
   line-height: 45px;
@@ -1333,7 +1350,8 @@ footer .widget.profile .bk-profile-socialicons span a {
 	text-align:center;
 }
 
-.bk-footer .contactform input, .bk-footer .contactform textarea {
+.bk-footer .contactform input, 
+.bk-footer .contactform textarea {
 	width:50%;
 }
 
@@ -1346,9 +1364,12 @@ footer.bk-footer .widget.profile .bk-profile-socialicons span {
 	=============================== */
 
 @media only screen and (max-width: 580px) {
-	.responsivecolumns .columns-three-left, .columns-three-33-34-33 .columns-three-left,
-	.responsivecolumns .columns-three-middle, .columns-three-33-34-33 .columns-three-middle,
-	.responsivecolumns .columns-three-right, .columns-three-33-34-33 .columns-three-right {
+	.responsivecolumns .columns-three-left, 
+    .columns-three-33-34-33 .columns-three-left,
+	.responsivecolumns .columns-three-middle, 
+    .columns-three-33-34-33 .columns-three-middle,
+	.responsivecolumns .columns-three-right, 
+    .columns-three-33-34-33 .columns-three-right {
 		width: 100%;
 	}
 	.wrapper {
@@ -1396,7 +1417,8 @@ footer.bk-footer .widget.profile .bk-profile-socialicons span {
 		top: -4px;
         margin: 0px auto;
 	}
-	.bk-footer .contactform input, .bk-footer .contactform textarea {
+	.bk-footer .contactform input, 
+    .bk-footer .contactform textarea {
 		width:70%;
 	}
 	.logo-container {
@@ -1446,7 +1468,9 @@ footer.bk-footer .widget.profile .bk-profile-socialicons span {
 	.textwidget {
 		width:100%;
 	}
-	.widget.profile span, .widget.profile a, .widget.profile p {
+	.widget.profile span, 
+    .widget.profile a, 
+    .widget.profile p {
 		margin:0px auto;
 		display:table;
 	}
@@ -1507,7 +1531,8 @@ footer.bk-footer .widget.profile .bk-profile-socialicons span {
     .widget .extendednavigation ul li:hover ul {
         margin:0;
     }
-    .widget.ecomcheckout, .widget.ecombasketsummary {
+    .widget.ecomcheckout, 
+    .widget.ecombasketsummary {
         width: 100%;
         margin:0;
     }
@@ -1529,7 +1554,8 @@ footer.bk-footer .widget.profile .bk-profile-socialicons span {
 	.blog-search-input {
 		width:60%;
 	}
-	.menu-subsection-header h2, .ecom-productlist-info h2 {
+	.menu-subsection-header h2, 
+    .ecom-productlist-info h2 {
 		font-size: bkscale(@font-swatch2-font-size, 0.7);
         line-height: bkscale(@font-swatch2-line-height, 0.7);
 	}
@@ -1569,34 +1595,46 @@ footer.bk-footer .widget.profile .bk-profile-socialicons span {
 		background-color:@color-swatch4;
         color:@font-swatch10-color;
 	}
-	.bk-footer .contactform input, .bk-footer .contactform textarea {
+	.bk-footer .contactform input, 
+    .bk-footer .contactform textarea {
 		width: 100%;
 	}
 	.blog-post-title {
 		padding: 10px 20px;
         margin-top: 20px;
 	}
-	.blog-post-summary, .blog-post-more-link, time, .blog-post-content, .blog-post-category, .blog-post-tags {
+	.blog-post-summary, 
+    .blog-post-more-link, 
+    time, .blog-post-content, 
+    .blog-post-category, 
+    .blog-post-tags {
 		padding:0px 20px;
 	}
     .widget.responsiveslideshow .slideshow-widget .btn-play:after {
         top: -16px;
     }
-    .widget.responsiveslideshow .slideshow-widget .btn-prev:after, .widget.responsiveslideshow .slideshow-widget .btn-next:after {
+    .widget.responsiveslideshow .slideshow-widget .btn-prev:after, 
+    .widget.responsiveslideshow .slideshow-widget .btn-next:after {
         top:0px;
     }
     .widget.ecomcheckout table {
         padding:0;
         background-color:transparent;
     }
-    .blog-post-summary, .blog-post-more-link, .blog-post-published-date, .blog-post-content, .blog-post-category, .blog-post-tags {
+    .blog-post-summary, 
+    .blog-post-more-link, 
+    .blog-post-published-date, 
+    .blog-post-content, 
+    .blog-post-category, 
+    .blog-post-tags {
         padding:0px 20px;
     }
     .headerwrapper {
         width: 90%;
         margin: 0 5%;
     }
-    .widget .extendednavigation > ul > li > a, .widget .extendednavigation ul li.folder > .text {
+    .widget .extendednavigation > ul > li > a, 
+    .widget .extendednavigation ul li.folder > .text {
         padding:5px 20px;
     }
     .widget .extendednavigation ul {
