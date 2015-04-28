@@ -389,7 +389,8 @@ header.bk-header {
 	Blog
 	=============================== */
 
-.blogpost, .blog-post-list {
+.blogpost, 
+.blog-post-list {
    .blog-post-feature-image-wrap {
        line-height: 0;
        background-size: contain;
@@ -410,14 +411,21 @@ header.bk-header {
 }
 
 .blog-post-title {
-	padding:40px 40px 10px;
+	padding: 20px 40px 10px;
 }
 
-.blog-post-summary, .blog-post-more-link, 
+.blog-post-summary, 
+.blog-post-more-link, 
 .blog-post-published-date, 
 .blog-post-content, 
-.blog-post-category, .blog-post-tags {
+.blog-post-category, 
+.blog-post-tags {
 	padding:0px 40px;
+}
+
+.blog-post-category,
+.blog-post-tags {
+    margin: 5px 0;
 }
 
 .blog-post-item.has-image {
@@ -458,7 +466,10 @@ header.bk-header {
 }
 
 .blog-post-body {
-    padding: 0px 40px;
+    padding: 0 40px;
+    @media @mobile {
+        padding: 0 20px;
+    }
 }
 
 .blog-post-sharing {
@@ -964,7 +975,8 @@ select {
   }
 }
 
-.widget.ecomcheckout table tr th, .widget.ecomcheckout table tr td {
+.widget.ecomcheckout table tr th, 
+.widget.ecomcheckout table tr td {
     border-bottom:1px solid darken(@color-swatch1,10%);
 }
 
@@ -1099,11 +1111,11 @@ select {
       background: transparent;
       @media @tablet {
                 img {
-            max-width:100px!important;
+            max-width: 100px!important;
         }
               @media @mobile {
                 img {
-            max-width:80px!important;
+            max-width: 80px!important;
         }
         display: table-row-group;
         + tr {
@@ -1122,7 +1134,9 @@ select {
       td:nth-child(2) {
         padding-left: 15px;
       }
-      .basket-summary-pricepu, .basket-summary-quantity, .basket-summary-amount {
+      .basket-summary-pricepu, 
+      .basket-summary-quantity, 
+      .basket-summary-amount {
         font-size: @font-swatch5-font-size;
         line-height: @font-swatch5-line-height;
         label {
@@ -1135,7 +1149,8 @@ select {
       .basket-summary-quantity {
         margin-top: 4px;
       }
-      .basket-summary-quantity, .basket-summary-quantitybtn {
+      .basket-summary-quantity, 
+      .basket-summary-quantitybtn {
         display: inline-block;
         label {
           display:block;
