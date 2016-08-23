@@ -1,7 +1,7 @@
 {
 	"name":"square",
 	"thumbnail":"square.png",
-	"screenshot":"square.png",
+	"screenshot":"square-screenshot.jpg",
     "templateType":"standard",
         "pageTypes": [
         "home"
