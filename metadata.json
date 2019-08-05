@@ -1,5 +1,6 @@
 {
 	"name":"square",
+	"versionTenCompatible": 1,
 	"thumbnail":"square.png",
 	"screenshot":"square-screenshot.jpg",
     "templateType":"standard",
