@@ -3,22 +3,21 @@
 // -----------------------------
 
 
-#migrated-site {
-
+#migrated-site {  
 
 // Stylseheet overrides
 // -----------------------------
 
 
 // Template wrapper (replace with corresponding template classes)
-.main.wrapper {
+.mainzone.headerwrapper {
   width: 100%;
   max-width: 100%;
   margin: 0;
 }
   
 // Main content spacing (replace with corresponding template class)
-.main {
+.mainzone.headerwrapper {
   padding: 0;
 }
 
@@ -27,18 +26,23 @@
   overflow: inherit;
 }
 
-
-
+.bk-header .widget.gallery {
+    margin-bottom: 0;
+}
 
 // Migration styles
 // -----------------------------
 
+// remove overflow of header section 
+&.site-iframe .bk-section {
+    overflow: hidden;
+}
 
 // Replace with corresponding template values
-@container-width: 960px;
+@container-width: 80%;
 
-@spacing__first--desktop: 40px;
-@spacing__first--tablet:  30px;
+@spacing__first--desktop: 20px;
+@spacing__first--tablet:  20px;
 @spacing__first--mobile:  20px;
 
 @spacing--other: 30px;
@@ -49,10 +53,20 @@
 #page-zones__main:empty,
 #page-zones__main > .widget:not(.row),
 .row:not(.widget):not(.row--width-no-padding) .row__container {
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 10%;
+  margin-right: 10%;
   max-width: @container-width;
   width: 90%;
+  
+//   @media @tablet {
+//     margin-left: 5%;
+//     margin-right: 5%;
+//   }
+  @media @mobile {
+    margin-left: 5%;
+    margin-right: 5%;
+    max-width: 100%;
+  }
 }
 
 
@@ -107,3 +121,4 @@
 
 
 } // End of #migrated-site
+
